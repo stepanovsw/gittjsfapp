@@ -18,6 +18,14 @@
                         <f:selectItem itemLabel="Mrs. " itemValue="MRS"/>
                         <f:selectItem itemLabel="Miss" itemValue="MISS"/>
                         <f:selectItem itemLabel="Ms" itemValue="MS"/>
+                        <f:selectItem itemLabel="Dr" itemValue="DR"/>
+                    </h:selectOneMenu>
+                    <h:message for="salutation" />
+                    <h:outputLabel value="First Name: " for="firstName" />
+                    <h:inputText id="firstName" label="First Name"
+                                 required="true"
+                                 value="#{registrationBean.firstName}" />
+                    
                         
                 </h:panelGrid>    
             <h:form/>
