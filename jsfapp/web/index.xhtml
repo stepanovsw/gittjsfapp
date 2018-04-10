@@ -21,10 +21,14 @@
                         <f:selectItem itemLabel="Dr" itemValue="DR"/>
                     </h:selectOneMenu>
                     <h:message for="salutation" />
-                    <h:outputLabel value="First Name: " for="firstName" />
-                    <h:inputText id="firstName" label="First Name"
+                    <h:outputLabel value="First Name:" for="firstName" />
+                    <h:inputText id="firstName" label="First Name" 
                                  required="true"
                                  value="#{registrationBean.firstName}" />
+                    
+                    <h:outputLabel value="Last Name:" for="lastName" />
+                    <h:inputText id="lastName" label="Last Name"
+                                 required="true"
                     
                         
                 </h:panelGrid>    
