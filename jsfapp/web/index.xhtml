@@ -11,6 +11,7 @@
         <h3>Regestrion Page<h3/>
             <h:form>
                 <h:panelGrid columns="3" columnClasses="rightalign, leftalign, leftalign">
+                    
                     <h:outputLabel value="Salutation: " for="salutation"/>
                     <h:selectOneMenu id="salutation" label="Salutation" value="#{registrationBean.salutation}" >
                         <f:selectItem itemLabel="" itemValue=""/>
@@ -21,18 +22,35 @@
                         <f:selectItem itemLabel="Dr" itemValue="DR"/>
                     </h:selectOneMenu>
                     <h:message for="salutation" />
+                    
                     <h:outputLabel value="First Name:" for="firstName" />
                     <h:inputText id="firstName" label="First Name" 
                                  required="true"
                                  value="#{registrationBean.firstName}" />
+                    <h:message for="firstName"/>
                     
                     <h:outputLabel value="Last Name:" for="lastName" />
                     <h:inputText id="lastName" label="Last Name"
                                  required="true"
+                                 value="#{registrationBean.lastName}" />
+                    <h:message for="lastName"/>
                     
-                        
+                    <h:outputLabel value="Age:" for="age" />
+                    <h:inputText id="age" label="Age" size="2"
+                                 value="#{registrationBean.age}" />
+                    <h:message for="age"/>
+                    
+                    <h:outputLabel value="Email Address" for="email"/>
+                    <h:inputText id="email" label="Email Address"
+                                 required ="true"
+                                 value="#{registrationBean.email}"/>
+                    <h:message for="email"/>
+                    <h:panelGroup/>
+                    
+                    <h:commandButton id="register" value="Register" action="confirmation"/>
+                       
                 </h:panelGrid>    
-            <h:form/>
+            </h:form>
                 
     </h:body>
 </html>
